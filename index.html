@@ -1,0 +1,219 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solo-Learn</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="img/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet"/>
+    <style>
+        
+
+        body {
+            background-color: #F0F0F0;
+            font-family: Mulish, sans-serif;
+            min-height: 250vh;
+            overflow: scroll;
+        }
+
+        body::-webkit-scrollbar {
+            display: none; /* Hide scrollbar */
+        }
+
+        
+
+        @media (max-width: 768px) {
+            .banner img {
+                width: 100%;
+                height: auto;
+            }
+            
+            section img{
+                display: none;
+            }
+
+            footer {
+                flex-direction: column;
+            }
+        }
+
+        .adventure {
+            animation: adventure-bounce 10s infinite;
+        }
+
+        @keyframes adventure-bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            20% {
+                transform: translateY(-20px);
+            }
+            40% {
+                transform: translateY(0);
+            }
+            60% {
+                transform: translateY(-20px);
+            }
+            80% {
+                transform: translateY(0);
+            }
+        }
+
+            .fade-in-row {
+                opacity: 0;
+                transform: translateY(80px);
+                transition: opacity 1s ease, transform 1s ease;
+            }
+            .fade-in-row.visible {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #641B2E;">
+        <div class="container-fluid">
+            <img src="img/ChatGPT_Image_30_Mei_2025__22.15.56-removebg-preview.png" alt="sp"
+                style="width: 50px; height: 50px; border-radius: 50%; margin-right: 10px;">
+            <a class="navbar-brand fw-bold" href="#">Solo-Pixel</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Fitur</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tentang</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <main class="container-fluid">
+        <div class="row justify-content-center align-items-center" style="min-height: 100vh; background-image: url(img/_\ \(1\).gif);background-size: cover; background-position: center; box-shadow: 0 4px 24px rgba(0,0,0,0.08);">
+            <div class="banner col-md-8 text-center text-white">
+                <br>
+                <br>
+                <img class="adventure" src="img/Group 1.svg" alt="Banner">
+                <p style="font-size: 1rem; color: #fff; margin-top: 20px; font-weight: bolder;">
+                    Selamat datang di Solo-Pixel, platform seni piksel yang dirancang untuk membantu Anda belajar dan berkreasi dengan mudah. Mulailah petualangan seni piksel Anda hari ini!
+                </p>
+                <br>
+                <a href="#" class="mt-0 p-0"><img src="img/start.svg" alt="Start" style="height: 150px; width: 150px;"></a>
+            </div>
+        </div>
+
+       <section> 
+        <!-- Section 1: Welcome -->
+        <div class="row justify-content-center align-items-center mt-5">
+            <div class="col-md-4 ps-lg-5 ps-md-0 flex-column justify-content-center">
+                <h2 class="fw-bold" style="color: #641B2E;">Selamat Datang di Solo-Pixel</h2>
+                <p style="font-size: 1rem; color: #333; margin-top: 20px;">
+                    Solo-Pixel adalah platform yang dirancang untuk membantu Anda <br>mempelajari dasar-dasar seni piksel. Dengan antarmuka yang sederhana dan mudah digunakan, Anda dapat mulai membuat karya seni piksel Anda sendiri dalam hitungan menit.
+                </p>
+                <p style="font-size: 1rem; color: #333;">
+                    Apakah Anda seorang pemula yang ingin belajar seni piksel atau seorang seniman berpengalaman yang ingin meningkatkan keterampilan Anda, Solo-Pixel memiliki sesuatu untuk semua orang. Bergabunglah dengan komunitas kami dan mulailah petualangan seni piksel Anda hari ini!
+                </p>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center align-items-center">
+                <img src="img/Pixel Art GIF - Pixel Art - Temukan & Bagikan GIF.gif" alt="Welcome Image" class="img-fluid" style="width: 20rem; height: auto; border-radius: 10px; box-shadow: 0 4px 24px rgba(0,0,0,0.08);">
+            </div>
+        </div>
+
+        <!-- Section 2: Features -->
+        <div class="row justify-content-center align-items-center mt-5">
+            <div class="col-md-4 d-flex justify-content-center align-items-center order-md-1">
+            <img src="img/adadeh.gif" alt="Features Image" class="img-fluid" style="width: 20rem; height: auto; border-radius: 10px; box-shadow: 0 4px 24px rgba(0,0,0,0.08);">
+            </div>
+            <div class="col-md-4 ps-lg-5 pe-lg-5 ps-md-0 flex-column justify-content-center order-md-2">
+            <h2 class="fw-bold" style="color: #641B2E;">Fitur Utama Solo-Pixel</h2>
+            <p style="font-size: 1rem; color: #333; margin-top: 20px;">
+                Solo-Pixel menawarkan berbagai fitur yang dirancang untuk membantu Anda menguasai seni piksel dengan mudah. Dari tutorial interaktif hingga alat pengeditan yang kuat, kami menyediakan semua yang Anda butuhkan untuk menciptakan karya seni yang menakjubkan.
+            </p>
+            <p style="font-size: 1rem; color: #333;">
+                Dengan Solo-Pixel, Anda dapat belajar dengan kecepatan Anda sendiri, berlatih keterampilan baru, dan berbagi karya seni Anda dengan komunitas global. Bergabunglah dengan kami dan temukan dunia seni piksel yang penuh warna!
+            </p>
+            </div>
+        </div>
+
+        <!-- Section 3: Benefits -->
+        <div class="row justify-content-center align-items-center mt-5">
+            <div class="col-md-4 ps-lg-5 ps-sm-0 ps-md-0 flex-column justify-content-center">
+                <h2 class="fw-bold" style="color: #641B2E;">Keuntungan Menggunakan Solo-Pixel</h2>
+                <p style="font-size: 1rem; color: #333; margin-top: 20px;">
+                    Dengan Solo-Pixel, Anda tidak hanya belajar seni piksel, tetapi juga bergabung dengan komunitas kreatif yang mendukung. Kami menyediakan sumber daya yang kaya, termasuk tutorial, forum diskusi, dan galeri seni untuk menginspirasi Anda.
+                </p>
+                <p style="font-size: 1rem; color: #333;">
+                    Apakah Anda ingin meningkatkan keterampilan Anda, mendapatkan umpan balik dari sesama seniman, atau hanya mencari inspirasi, Solo-Pixel adalah tempat yang tepat untuk Anda. Bergabunglah dengan kami dan mulailah perjalanan seni piksel Anda hari ini!
+                </p>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center align-items-center">
+                <img src="img/Days with dad - Gustavo Viselner.gif" alt="Benefits Image" class="img-fluid" style="width: 20rem; height: auto; border-radius: 10px; box-shadow: 0 4px 24px rgba(0,0,0,0.08);">
+            </div>
+        </div>
+        </section>
+    </main>
+    <br>
+        <footer class="container-fluid text-white d-flex mt-5 p-5 text-wrap justify-content-between" style="background-color: #641B2E;">
+        <div class="Tentang d-flex flex-column w-md-50 w-lg-25">
+            <h4 class="fw-bold">Tentang Solo-Pixel</h4>
+            <p>
+                Solo-Pixel adalah platform yang didedikasikan untuk seni piksel, menyediakan alat dan sumber daya untuk membantu seniman dari semua tingkat keterampilan. Kami percaya bahwa seni piksel adalah bentuk ekspresi yang unik dan kami ingin membuatnya dapat diakses oleh semua orang.
+                Dengan antarmuka yang ramah pengguna dan komunitas yang mendukung, Solo-Pixel adalah tempat yang sempurna untuk memulai atau melanjutkan perjalanan seni piksel Anda.
+            </p>
+        </div>
+
+        <div class="Navigasi ms-lg-5 ms-md-0 d-flex flex-column">
+            <h4 class="fw-bold">Navigasi</h4>
+            <a href="#">Start</a>
+            <a href="#">Section</a>
+            <a href="#">Footer</a>
+        </div>
+
+        <div class="Web ms-lg-5 ms-md-0 d-flex flex-column">
+            <h4 class="fw-bold">Website Resmi</h4>
+            <a href="#">Solo-Pixel</a>
+            <a href="#">Seni Indonesia</a>
+        </div>
+
+        <div class="Kontak ms-lg-5 ms-md-0 d-flex flex-column">
+            <h4 class="fw-bold">Kontak</h4>
+            <p><i class="bi bi-envelope-at-fill"></i> solopixel4@gmail.com</p>
+            <p><i class="bi bi-telephone-fill"></i> Telepon: 021-12345678</p>
+            <p><i class="bi bi-geo-alt-fill"></i> Jl. Raya Basket No. 123, Banjarmasin</p>
+        </div>
+    </footer>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+                document.addEventListener("DOMContentLoaded", function() {
+                const rows = document.querySelectorAll("section .row");
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("visible");
+                        }
+                    });
+                }, { threshold: 0.2 });
+
+                rows.forEach(row => {
+                    row.classList.add("fade-in-row");
+                    observer.observe(row);
+                });
+            });
+</script>
+</html>
