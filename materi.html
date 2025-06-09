@@ -1,0 +1,375 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solo-Learn</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="img/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <link rel="icon" href="img/ChatGPT_Image_30_Mei_2025__22.15.56-removebg-preview.png" type="image/png">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <style>
+        body {
+            background-color: #F0F0F0;
+            font-family: Mulish, sans-serif;
+            min-height: 320vh;
+            overflow: scroll;
+        }
+
+        #materi-cards .card {
+            height: 420px;
+            display: flex;
+            flex-direction: column;
+        }
+        #materi-cards .card-img-top {
+            height: 180px;
+            object-fit: cover;
+        }
+        #materi-cards .card-body {
+            flex: 1 1 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        body::-webkit-scrollbar {
+            display: none;
+            /* Hide scrollbar */
+        }
+
+
+
+        @media (max-width: 768px) {
+            .banner img {
+                width: 100%;
+                height: auto;
+            }
+
+            section img {
+                display: none;
+            }
+
+            footer {
+                flex-direction: column;
+            }
+        }
+
+        .adventure {
+            animation: adventure-bounce 9s infinite;
+        }
+
+        @keyframes adventure-bounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            20% {
+                transform: translateY(-20px);
+            }
+
+            40% {
+                transform: translateY(0);
+            }
+
+            60% {
+                transform: translateY(-20px);
+            }
+
+            80% {
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in-row {
+            opacity: 0;
+            transform: translateY(80px);
+            transition: opacity 1s ease, transform 1s ease;
+        }
+
+        .fade-in-row.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        nav .container-fluid ul li a:hover {
+            color: #fff;
+            text-decoration: none;
+
+        }
+
+        /* filter button styles */
+                                .filter-btn.btn-outline-dark {
+                            border-color: #641B2E !important;
+                            color: #641B2E !important;
+                        }
+                        .filter-btn.btn-outline-dark:hover,
+                        .filter-btn.btn-outline-dark.active,
+                        .filter-btn.btn-outline-dark:focus {
+                            background-color: #641B2E !important;
+                            color: #fff !important;
+                            border-color: #641B2E !important;
+                        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fw-bolder sticky-top" style="background-color: #641B2E;">
+        <div class="container-fluid">
+            <img src="img/ChatGPT_Image_30_Mei_2025__22.15.56-removebg-preview.png" alt="sp"
+                style="width: 50px; height: 50px; border-radius: 50%; margin-right: 10px;">
+            <a class="navbar-brand fw-bold" href="#">Solo-Pixel</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="materi.html">Materi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tentang</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <main class="container-fluid">
+        <div class="row justify-content-center align-items-center"
+            style="min-height: 100vh; background-image: url(img/background.gif);background-size: cover; background-position: center; box-shadow: 0 8px 48px 0 rgba(0,0,0,0.18), 0 1.5px 8px 0 rgba(100,27,46,0.12);">
+            <div class="banner col-md-8 text-center text-white">
+                <br>
+                <br>
+                <img class="adventure" src="img/Group 1.svg" alt="Banner">
+                <p style="font-size: 1rem; color: #fff; margin-top: 20px; font-weight: bolder;">
+                    Selamat datang di Solo-Pixel, platform seni piksel yang dirancang untuk membantu Anda belajar dan
+                    berkreasi dengan mudah. Mulailah petualangan seni piksel Anda hari ini!
+                </p>
+                <br>
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="container-fluid">
+            <div class="row justify-content-center align-items-center mt-5">
+                <div class="col-md-8 text-center">
+                    <h2 class="fw-bold" style="color: #641B2E;">Mulailah Petualangan Seni Piksel Anda Hari Ini!</h2>
+                    <p style="font-size: 1rem; color: #333; margin-top: 20px;">
+                        Bergabunglah dengan Solo-Pixel dan temukan dunia seni piksel yang penuh warna. Dengan alat yang
+                        mudah digunakan dan komunitas yang mendukung, Anda akan segera menciptakan karya seni yang
+                        menakjubkan.
+                    </p>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column justify-content-center align-items-center mt-5">
+                <div class="row w-50">
+                    <div class="col-12 col-md-3 mb-3">
+                        <button type="button" class="btn btn-outline-dark fw-bolder w-100 filter-btn active" data-filter="popular" style="border-radius: 60px;">Popular</button>
+                    </div>
+                    <div class="col-12 col-md-3 mb-3">
+                        <button type="button" class="btn btn-outline-dark fw-bolder w-100 filter-btn" data-filter="easy" style="border-radius: 60px;">Easy</button>
+                    </div>
+                    <div class="col-12 col-md-3 mb-3">
+                        <button type="button" class="btn btn-outline-dark fw-bolder w-100 filter-btn" data-filter="intermediate" style="border-radius: 60px;">Intermediate</button>
+                    </div>
+                    <div class="col-12 col-md-3 mb-3">
+                        <button type="button" class="btn btn-outline-dark fw-bolder w-100 filter-btn" data-filter="hard" style="border-radius: 60px;">Hard</button>
+                    </div>
+                </div>
+            </div>
+            <div class="materi mt-5">
+                <div class="d-flex flex-wrap justify-content-center align-items-center" id="materi-cards">
+                    <!-- Popular cards -->
+                    <div class="card m-3" style="width: 18rem; box-shadow: 0 4px 24px rgba(0,0,0,0.12);" data-category="popular easy">
+                        <img src="img/card1.gif" class="card-img-top" alt="Pixel Art Example">
+                        <div class="card-body">
+                            <h5 class="card-title">Pixel Art 606 (Easy)</h5>
+                            <p class="card-text">Pelajari dasar-dasar seni piksel dengan tutorial interaktif dan latihan seru.</p>
+                            <a href="#" class="btn btn-primary" style="background-color: #641B2E; border: none;">Mulai Belajar</a>
+                        </div>
+                    </div>
+                    <div class="card m-3" style="width: 18rem; box-shadow: 0 4px 24px rgba(0,0,0,0.12);" data-category="popular intermediate">
+                        <img src="img/alfarez018b34b6-4eeb-41c8-815e-6942137ab449.gif" class="card-img-top" alt="Pixel Art Example">
+                        <div class="card-body">
+                            <h5 class="card-title">Pixel Art 202 (Medium)</h5>
+                            <p class="card-text">Pelajari dasar-dasar seni piksel dengan tutorial interaktif dan latihan seru.</p>
+                            <a href="#" class="btn btn-primary" style="background-color: #641B2E; border: none;">Mulai Belajar</a>
+                        </div>
+                    </div>
+                    <div class="card m-3" style="width: 18rem; box-shadow: 0 4px 24px rgba(0,0,0,0.12);" data-category="popular hard">
+                        <img src="img/alfarez635226ec-4304-4d84-81e6-885c63144b9d.gif" class="card-img-top" alt="Pixel Art Example">
+                        <div class="card-body">
+                            <h5 class="card-title">Pixel 505 (Hard)</h5>
+                            <p class="card-text">Pelajari dasar-dasar seni piksel dengan tutorial interaktif dan latihan seru.</p>
+                            <a href="#" class="btn btn-primary" style="background-color: #641B2E; border: none;">Mulai Belajar</a>
+                        </div>
+                    </div>
+                    <div class="card m-3" style="width: 18rem; box-shadow: 0 4px 24px rgba(0,0,0,0.12);" data-category="popular easy">
+                        <img src="img/alfarez_ (2).gif" class="card-img-top" alt="Pixel Art Example">
+                        <div class="card-body">
+                            <h5 class="card-title">Pixel Art 202 (Easy)</h5>
+                            <p class="card-text">Pelajari dasar-dasar seni piksel dengan tutorial interaktif dan latihan seru.</p>
+                            <a href="#" class="btn btn-primary" style="background-color: #641B2E; border: none;">Mulai Belajar</a>
+                        </div>
+                    </div>
+                    <!-- Easy cards -->
+                    <div class="card m-3" style="width: 18rem; box-shadow: 0 4px 24px rgba(0,0,0,0.12);" data-category="easy">
+                        <img src="img/alfarezebc53db0-8b96-4f3d-bfb7-24252b123a63.gif" class="card-img-top" alt="Pixel Art Easy">
+                        <div class="card-body">
+                            <h5 class="card-title">Pixel Art 101 (Easy)</h5>
+                            <p class="card-text">Belajar membuat pixel art sederhana untuk pemula.</p>
+                            <a href="#" class="btn btn-primary" style="background-color: #641B2E; border: none;">Mulai Belajar</a>
+                        </div>
+                    </div>
+                    <!-- Intermediate cards -->
+                    <div class="card m-3" style="width: 18rem; box-shadow: 0 4px 24px rgba(0,0,0,0.12);" data-category="intermediate">
+                        <img src="img/alfarezPost by @chubjubz · 1 image.gif" class="card-img-top" alt="Pixel Art Intermediate">
+                        <div class="card-body">
+                            <h5 class="card-title">Pixel Art 303 (Medium)</h5>
+                            <p class="card-text">Tingkatkan skill dengan teknik pixel art tingkat menengah.</p>
+                            <a href="#" class="btn btn-primary" style="background-color: #641B2E; border: none;">Mulai Belajar</a>
+                        </div>
+                    </div>
+                    <!-- Hard cards -->
+                    <div class="card m-3" style="width: 18rem; box-shadow: 0 4px 24px rgba(0,0,0,0.12);" data-category="hard">
+                        <img src="img/_.gif" class="card-img-top" alt="Pixel Art Hard">
+                        <div class="card-body">
+                            <h5 class="card-title">Pixel Art 404 (Hard)</h5>
+                            <p class="card-text">Pelajari teknik lanjutan dan buat karya pixel art yang kompleks.</p>
+                            <a href="#" class="btn btn-primary" style="background-color: #641B2E; border: none;">Mulai Belajar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <br>
+    <!-- Footer -->
+    <footer class="container-fluid text-white mt-5 p-5 text-wrap" style="background-color: #641B2E;">
+        <div class="d-flex flex-wrap justify-content-between">
+            <div class="Tentang ms-lg-5 flex-column flex-wrap">
+                <h4 class="fw-bold">Tentang Solo-Pixel</h4>
+                <p class="w-75 text-wrap">
+                    Solo-Pixel adalah platform yang didedikasikan untuk seni piksel, menyediakan alat dan sumber daya untuk
+                    membantu seniman dari semua tingkat keterampilan. Kami percaya bahwa seni piksel adalah bentuk ekspresi
+                    yang unik dan kami ingin membuatnya dapat diakses oleh semua orang.
+                </p>
+            </div>
+
+            <div class="Navigasi ms-lg-5 ms-md-0 me-lg-5 d-flex flex-column">
+                <h4 class="fw-bold">Navigasi</h4>
+                <a href="#">Start</a>
+                <a href="#">Section</a>
+                <a href="#">Footer</a>
+            </div>
+
+            <div class="Web ms-lg-5 ms-md-0 me-lg-5 d-flex flex-column">
+                <h4 class="fw-bold">Website Resmi</h4>
+                <a href="#">Solo-Pixel</a>
+                <a href="#">Seni Indonesia</a>
+            </div>
+
+            <div class="Kontak ms-lg-5 ms-md-0 me-lg-5 d-flex flex-column">
+                <h4 class="fw-bold">Kontak</h4>
+                <p><i class="bi bi-envelope-at-fill"></i> solopixel4@gmail.com</p>
+                <p><i class="bi bi-telephone-fill"></i> Telepon: 021-12345678</p>
+                <p><i class="bi bi-geo-alt-fill"></i> Jl. Raya Basket No. 123, Banjarmasin</p>
+            </div>
+        </div>
+        <hr class="my-4" style="border-color: rgba(255,255,255,0.2);">
+        <div class="d-flex flex-column align-items-center mt-3">
+            <h4 class="fw-bold">Ikuti Kami</h4>
+            <div class="d-flex">
+                <a href="#" class="text-white me-3 fs-5"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-white me-3 fs-5"><i class="bi bi-twitter"></i></a>
+                <a href="https://www.instagram.com/alfaaarez___/" class="text-white me-3 fs-5"><i class="bi bi-instagram"></i></a>
+                <a href="https://github.com/Alfarez-dev" class="text-white fs-5"><i class="bi bi-github"></i></a>
+            </div>
+            <br>
+            <div class="d-flex">
+                <p>
+                    &copy; 2025 Solo-Pixel. All rights reserved. | Made with <i class="bi bi-heart-fill text-danger"></i>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const rows = document.querySelectorAll("section .row");
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                }
+            });
+        }, { threshold: 0.2 });
+
+        rows.forEach(row => {
+            row.classList.add("fade-in-row");
+            observer.observe(row);
+        });
+    });
+
+                    // Swiper init for mobile only
+                if (window.innerWidth < 768) {
+                    new Swiper('.materi-swiper', {
+                        slidesPerView: 1,
+                        spaceBetween: 16,
+                        pagination: {
+                            el: '.swiper-pagination',
+                            clickable: true,
+                        },
+                    });
+                }
+
+                // Filter button logic
+            document.addEventListener("DOMContentLoaded", function () {
+                const filterBtns = document.querySelectorAll('.filter-btn');
+                const cards = document.querySelectorAll('#materi-cards .card');
+
+                function filterCards(category) {
+                    cards.forEach(card => {
+                        // Show cards matching the selected category or popular
+                        if (category === 'popular') {
+                            card.style.display = card.dataset.category.includes('popular') ? '' : 'none';
+                        } else {
+                            card.style.display = (card.dataset.category.split(' ').includes(category)) ? '' : 'none';
+                        }
+                    });
+                }
+
+                filterBtns.forEach(btn => {
+                    btn.addEventListener('click', function () {
+                        filterBtns.forEach(b => b.classList.remove('active'));
+                        this.classList.add('active');
+                        filterCards(this.dataset.filter);
+                    });
+                });
+
+                // Initial state: show only popular
+                filterCards('popular');
+            });
+</script>
+
+</html>
