@@ -1,0 +1,370 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solo-Music</title>
+    
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="img/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <link rel="icon" href="img/sopran.png" type="image/png">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="css/materialatmusik.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fw-bolder sticky-top" style="background-color: #641B2E;">
+        <div class="container-fluid me-lg-5 ms-lg-5 me-md-0 ms-md-0">
+            <img src="img/sopran.png" alt="sp"
+                style="width: 50px; height: 50px; border-radius: 50%; margin-right: 10px;">
+            <a class="navbar-brand fw-bold" href="#">Solo-Music</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="materi.html">Materi</a>
+                    </li>
+                                        <li class="nav-item">
+                        <a class="nav-link" href="quiz.html">Quiz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tentangguru.html">Tentang Guru</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontak.html">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container-fluid">
+        <div class="row justify-content-center align-items-center"
+            style="min-height: 100vh; background-image: url(img/background.gif);background-size: cover; background-position: center; box-shadow: 0 8px 48px 0 rgba(0,0,0,0.18), 0 1.5px 8px 0 rgba(100,27,46,0.12);">
+            <div class="banner col-md-8 text-center text-white">
+                <br>
+                <br>
+                <img class="adventure" src="img/alatmateri (1).png" alt="Banner">
+                <p style="font-size: 1rem; color: #fff; margin-top: 20px; font-weight: bolder;">
+                    disini kamu bisa belajar berbagai alat musik, mulai dari alat musik tradisional hingga modern.selain itu, kamu juga bisa belajar tentang teori musik, teknik bermain, dan banyak lagi. Solo-Music adalah tempat yang tepat untuk mengembangkan keterampilan musikmu.
+                </p>
+                <br>
+            </div>
+        </div>
+        <br>
+        <div class="container-fluid text-center align-self-center align-items-center">
+        <iframe class="ratio-16x9 ratio h-25 w" src="https://www.youtube.com/embed/Tde91GvEHV8?si=gnWN2IDvo0uIofXr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p class="fw-bold text-dark" style="font-size: 1.2rem; color: #fff;">
+                    "Musik adalah bahasa universal yang menghubungkan hati dan jiwa kita." - Solo-Music
+        </p>
+        </div>
+        <br>
+        <!-- Piano Interaktif -->
+<div class="piano">
+    <div class="key white" data-note="C4"></div>
+    <div class="key black" data-note="C#4"></div>
+    <div class="key white" data-note="D4"></div>
+    <div class="key black" data-note="D#4"></div>
+    <div class="key white" data-note="E4"></div>
+    <div class="key white" data-note="F4"></div>
+    <div class="key black" data-note="F#4"></div>
+    <div class="key white" data-note="G4"></div>
+    <div class="key black" data-note="G#4"></div>
+    <div class="key white" data-note="A4"></div>
+    <div class="key black" data-note="A#4"></div>
+    <div class="key white" data-note="B4"></div>
+    <div class="key white" data-note="C5"></div>
+</div>
+<br>
+
+        <!-- Filter Buttons -->
+        <div class="row justify-content-center mt-5">
+            <div class="col-auto">
+            <button class="btn filter-btn btn-outline-dark active me-2" data-filter="semua">Semua</button>
+            <button class="btn filter-btn btn-outline-dark me-2" data-filter="tradisional">Tradisional</button>
+            <button class="btn filter-btn btn-outline-dark" data-filter="modern">Modern</button>
+            </div>
+        </div>
+
+        <!-- Materi Cards -->
+        <section class="container mt-4">
+            <div class="row g-4" id="materi-cards">
+            <!-- Gamelan -->
+            <div class="col-md-4" data-category="semua tradisional">
+                <div class="card h-100 shadow">
+                <img src="img/gamelan.jpeg" class="card-img-top" style="width:100%;height:250px;object-fit:cover;" alt="Gamelan">
+                <div class="card-body">
+                    <h5 class="card-title">Gamelan</h5>
+                    <p class="card-text">Gamelan adalah ansambel musik tradisional Jawa dan Bali yang terdiri dari berbagai instrumen seperti gong, kenong, dan saron. Gamelan sering dimainkan dalam upacara adat dan pertunjukan seni.</p>
+                    <button id="playGamelanBtn" class="btn mt-2 text-white" type="button" style="background-color: #641B2E; font-weight: bold;">
+                        <i class="bi bi-play-fill"></i> Putar Suara Gamelan
+                    </button>
+                    <audio id="gamelanAudio" src="img/Indonesian Gamelan - Sound Effect For Editing - Sound Effect Nexus.mp3"></audio>
+                    <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        const playBtn = document.getElementById('playGamelanBtn');
+                        const audio = document.getElementById('gamelanAudio');
+                        if (playBtn && audio) {
+                            playBtn.addEventListener('click', function () {
+                                audio.currentTime = 0;
+                                audio.play();
+                            });
+                        }
+                    });
+                    </script>
+                </div>
+                </div>
+            </div>
+            <!-- Angklung -->
+            <div class="col-md-4" data-category="semua tradisional">
+                <div class="card h-100 shadow">
+                <img src="img/angklung.jpeg" class="card-img-top" style="width:100%;height:250px;object-fit:cover;" alt="Angklung">
+                <div class="card-body">
+                    <h5 class="card-title">Angklung</h5>
+                    <p class="card-text">Angklung adalah alat musik tradisional Sunda yang terbuat dari bambu dan dimainkan dengan cara digoyangkan. Angklung menghasilkan suara harmonis dan sering dimainkan secara berkelompok.</p>
+                    <button id="playAngklungBtn" class="btn mt-2 text-white" type="button" style="background-color: #641B2E; font-weight: bold;">
+                        <i class="bi bi-play-fill"></i> Putar Suara Angklung
+                    </button>
+                    <audio id="angklungAudio" src="img/ANGKLUNG SOUND suara angklung tradisional - YOU SOUND.mp3"></audio>
+                    <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        const playBtn = document.getElementById('playAngklungBtn');
+                        const audio = document.getElementById('angklungAudio');
+                        if (playBtn && audio) {
+                            playBtn.addEventListener('click', function () {
+                                audio.currentTime = 0;
+                                audio.play();
+                            });
+                        }
+                    });
+                    </script>
+                </div>
+                </div>
+            </div>
+            <!-- Piano -->
+            <div class="col-md-4" data-category="semua modern">
+                <div class="card h-100 shadow">
+                <img src="img/board.gif" class="card-img-top" style="width:100%;height:250px;object-fit:cover;" alt="Piano">
+                <div class="card-body">
+                    <h5 class="card-title">Piano</h5>
+                    <p class="card-text">Piano adalah alat musik modern yang dimainkan dengan menekan tuts. Piano digunakan dalam berbagai genre musik, mulai dari klasik hingga pop, dan sangat penting dalam pembelajaran musik dasar.</p>
+                    <button id="playPianoBtn" class="btn mt-2 text-white" type="button" style="background-color: #641B2E; font-weight: bold;">
+                        <i class="bi bi-play-fill"></i> Putar Suara Piano
+                    </button>
+                    <audio id="pianoAudio" src="img/What does a piano sound like (Ode to Joy) - Utah Symphony & Utah Opera (USUO).mp3"></audio>
+                    <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        const playBtn = document.getElementById('playPianoBtn');
+                        const audio = document.getElementById('pianoAudio');
+                        if (playBtn && audio) {
+                            playBtn.addEventListener('click', function () {
+                                audio.currentTime = 0;
+                                audio.play();
+                            });
+                        }
+                    });
+                    </script>
+                </div>
+                </div>
+            </div>
+            <!-- Gitar -->
+            <div class="col-md-4" data-category="semua modern">
+                <div class="card h-100 shadow">
+                <img src="img/gifmaterialatgitar.gif" style="width:100%;height:250px;object-fit:cover;" class="card-img-top" alt="Gitar">
+                <div class="card-body">
+                    <h5 class="card-title">Gitar</h5>
+                    <p class="card-text">Gitar adalah alat musik berdawai yang dimainkan dengan cara dipetik. Gitar sangat populer di seluruh dunia dan digunakan dalam berbagai jenis musik seperti pop, rock, jazz, dan lainnya.</p>
+                    <!-- Tombol Putar Suara Gitar -->
+                    <button id="playGuitarBtn" class="btn mt-2 text-white" type="button" style="background-color: #641B2E; font-weight: bold;">
+                        <i class="bi bi-play-fill"></i> Putar Suara Gitar
+                    </button>
+                    <audio id="guitarAudio" src="img/Buddy Holly but just the riff - Bubbsterr.mp3"></audio>
+                    <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        const playBtn = document.getElementById('playGuitarBtn');
+                        const audio = document.getElementById('guitarAudio');
+                        if (playBtn && audio) {
+                            playBtn.addEventListener('click', function () {
+                                audio.currentTime = 0;
+                                audio.play();
+                            });
+                        }
+                    });
+                    </script>
+                </div>
+                </div>
+            </div>
+            <!-- Drum -->
+            <div class="col-md-4" data-category="semua modern">
+                <div class="card h-100 shadow">
+                <img src="img/gifmaterialatdrum.gif" class="card-img-top" style="width:100%;height:250px;object-fit:cover;" alt="Drum">
+                <div class="card-body">
+                    <h5 class="card-title">Drum</h5>
+                    <p class="card-text">Drum adalah alat musik perkusi yang menghasilkan suara dengan cara dipukul. Drum menjadi bagian penting dalam band modern untuk mengatur ritme musik.</p>
+                    <br>
+                    <button id="playDrumBtn" class="btn mt-2 text-white" type="button" style="background-color: #641B2E; font-weight: bold;">
+                        <i class="bi bi-play-fill"></i> Putar Suara Drum
+                    </button>
+                    <audio id="drumAudio" src="img/Drum Roll - Sound Effect (HD) - Gaming Sound FX.mp3"></audio>
+                    <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        const playBtn = document.getElementById('playDrumBtn');
+                        const audio = document.getElementById('drumAudio');
+                        if (playBtn && audio) {
+                            playBtn.addEventListener('click', function () {
+                                audio.currentTime = 0;
+                                audio.play();
+                            });
+                        }
+                    });
+                    </script>
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- Quiz Section -->
+        <section class="container mt-5">
+            <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card shadow">
+                <div class="card-header text-white" style="background-color: #641B2E;">
+                    <h5 class="mb-0";">Quiz: Tes Pengetahuan Alat Musikmu! 🎶 (Opsional)</h5>
+                </div>
+                <div class="card-body">
+                    <form id="quizForm">
+                    <div class="mb-4">
+                        <label class="fw-bold">1. Alat musik apa yang dimainkan dengan cara digoyangkan?</label>
+                        <div>
+                        <input type="radio" name="q1" value="Angklung" id="q1a">
+                        <label for="q1a">Angklung</label><br>
+                        <input type="radio" name="q1" value="Piano" id="q1b">
+                        <label for="q1b">Piano</label><br>
+                        <input type="radio" name="q1" value="Drum" id="q1c">
+                        <label for="q1c">Drum</label><br>
+                        <input type="radio" name="q1" value="Gitar" id="q1d">
+                        <label for="q1c">Gitar</label>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label class="fw-bold">2. Gamelan berasal dari daerah mana?</label>
+                        <div>
+                        <input type="radio" name="q2" value="Jawa dan Bali" id="q2a">
+                        <label for="q2a">Jawa dan Bali</label><br>
+                        <input type="radio" name="q2" value="Sumatera" id="q2b">
+                        <label for="q2b">Sumatera</label><br>
+                        <input type="radio" name="q2" value="Kalimantan" id="q2c">
+                        <label for="q2c">Kalimantan</label><br>
+                        <input type="radio" name="q2" value="Spanyol" id="q2d">
+                        <label for="q1c">Spanyol</label>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label class="fw-bold">3. Apa fungsi drum dalam sebuah band?</label>
+                        <div>
+                        <input type="radio" name="q3" value="Mengatur ritme" id="q3a">
+                        <label for="q3a">Mengatur ritme</label><br>
+                        <input type="radio" name="q3" value="Membuat melodi" id="q3b">
+                        <label for="q3b">Membuat melodi</label><br>
+                        <input type="radio" name="q3" value="Menyanyi" id="q3c">
+                        <label for="q3c">Menyanyi</label><br>
+                        <input type="radio" name="q3" value="Menghasilkan suara harmonis" id="q3d">
+                        <label for="q3d">Menghasilkan suara harmonis</label>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label class="fw-bold">4. Drum dimainkan dengan cara?</label>
+                        <div>
+                        <input type="radio" name="q4" value="Dipukul" id="q4a">
+                        <label for="q4a">Dipukul</label><br>
+                        <input type="radio" name="q4" value="Ditiup" id="q4b">
+                        <label for="q4b">Ditiup</label><br>
+                        <input type="radio" name="q4" value="Digesek" id="q4c">
+                        <label for="q4c">Digesek</label><br>
+                        <input type="radio" name="q4" value="Ditekan" id="q4d">
+                        <label for="q4d">Ditekan</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-success fw-bold">Kirim Jawaban</button>
+                    </form>
+                    <div id="quizResult" class="alert mt-4 d-none"></div>
+                    <div class="progress mt-3 d-none" id="quizProgressBar" style="height: 32px;">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated fw-bold" id="quizProgress" role="progressbar" style="width: 0%; background-color: #641B2E; font-size: 1.1rem;">0%</div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+    <br>
+    <!-- Footer -->
+    <footer class="container-fluid text-white mt-5 p-5 text-wrap" style="background-color: #641B2E;">
+        <div class="d-flex flex-wrap justify-content-between">
+            <div class="Tentang ms-lg-5 flex-column flex-wrap">
+                <h4 class="fw-bold">Tentang Solo-Music</h4>
+                <p class="w-75 text-wrap">
+                    Solo-Music adalah platform yang didedikasikan untuk seni musik, menyediakan alat dan sumber daya untuk
+                    membantu seniman dari semua tingkat keterampilan. Kami percaya bahwa seni musik adalah bentuk ekspresi
+                    yang unik dan kami ingin membuatnya dapat diakses oleh semua orang.
+                </p>
+            </div>
+
+            <div class="Navigasi ms-lg-5 ms-md-0 me-lg-5 d-flex flex-column">
+                <h4 class="fw-bold">Navigasi</h4>
+                <a href="index.html">Start</a>
+                <a href="materi.html">Materi</a>
+                <a href="kontak.html">Kontak</a>
+            </div>
+
+            <div class="Web ms-lg-5 ms-md-0 me-lg-5 d-flex flex-column">
+                <h4 class="fw-bold">Website Resmi</h4>
+                <a href="#">Solo-Music</a>
+                <a href="#">Seni Indonesia</a>
+            </div>
+
+            <div class="Kontak ms-lg-5 ms-md-0 me-lg-5 d-flex flex-column">
+                <h4 class="fw-bold">Kontak</h4>
+                <p><i class="bi bi-envelope-at-fill"></i> solomusic4@gmail.com</p>
+                <p><i class="bi bi-telephone-fill"></i> Telepon: 021-12345678</p>
+                <p><i class="bi bi-geo-alt-fill"></i> Jl. Raya Basket No. 123, Banjarmasin</p>
+            </div>
+        </div>
+        <hr class="my-4" style="border-color: rgba(255,255,255,0.2);">
+        <div class="d-flex flex-column align-items-center mt-3">
+            <h4 class="fw-bold">Ikuti Kami</h4>
+            <div class="d-flex">
+                <a href="#" class="text-white me-3 fs-5"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-white me-3 fs-5"><i class="bi bi-twitter"></i></a>
+                <a href="https://www.instagram.com/alfaaarez___/" class="text-white me-3 fs-5"><i class="bi bi-instagram"></i></a>
+                <a href="https://github.com/Alfarez-dev" class="text-white fs-5"><i class="bi bi-github"></i></a>
+            </div>
+            <br>
+            <div class="d-flex">
+                <p>
+                    &copy; 2025 Solo-Music. All rights reserved. | Made with <i class="bi bi-heart-fill text-danger"></i>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/materialatmusik.js"></script>
+
+
+</html>
