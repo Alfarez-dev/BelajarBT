@@ -1,0 +1,84 @@
+body {
+            background-color: #F0F0F0;
+            font-family: Mulish, sans-serif;
+            min-height: 320vh;
+            overflow: scroll;
+        }
+
+        body::-webkit-scrollbar {
+            display: none;
+            /* Hide scrollbar */
+        }
+
+        @media (max-width: 768px) {
+            .banner img {
+                width: 100%;
+                height: auto;
+            }
+
+            section img {
+                display: none;
+            }
+
+            footer {
+                flex-direction: column;
+            }
+        }
+
+        .adventure {
+            animation: adventure-bounce 9s infinite;
+        }
+
+        @keyframes adventure-bounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            20% {
+                transform: translateY(-20px);
+            }
+
+            40% {
+                transform: translateY(0);
+            }
+
+            60% {
+                transform: translateY(-20px);
+            }
+
+            80% {
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in-row {
+            opacity: 0;
+            transform: translateY(80px);
+            transition: opacity 1s ease, transform 1s ease;
+        }
+
+        .fade-in-row.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        nav .container-fluid ul li a:hover {
+            color: #fff;
+            text-decoration: none;
+
+        }
+
+        /* filter button styles */
+                                .filter-btn.btn-outline-dark {
+                            border-color: #641B2E !important;
+                            color: #641B2E !important;
+                        }
+                        .filter-btn.btn-outline-dark:hover,
+                        .filter-btn.btn-outline-dark.active,
+                        .filter-btn.btn-outline-dark:focus {
+                            background-color: #641B2E !important;
+                            color: #fff !important;
+                            border-color: #641B2E !important;
+                        }
