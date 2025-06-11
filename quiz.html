@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuis Interaktif Seni Musik</title>
+    <!-- Memuat Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Memuat Google Fonts: Inter untuk tampilan yang bersih -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Memuat ikon dari Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+            <link rel="icon" href="img/sopran.png" type="image/png">
+    <link rel="stylesheet" href="css/quiz.css">
+</head>
+<body class="bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark fw-bolder sticky-top" style="background-color: #641B2E;">
+        <div class="container-fluid me-lg-5 ms-lg-5 me-md-0 ms-md-0">
+            <img src="img/sopran.png" alt="sp"
+                style="width: 50px; height: 50px; border-radius: 50%; margin-right: 10px;">
+            <a class="navbar-brand fw-bold" href="#">Solo-Music</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="materi.html">Materi</a>
+                    </li>
+                                        <li class="nav-item">
+                        <a class="nav-link" href="quiz.html">Quiz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tentangguru.html">Tentang Guru</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontak.html">Kontak</a>
+                    </li>
+                    
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <div class="text-light d-flex align-items-center justify-content-center min-vh-100 p-3">
+    <div class="container" style="max-width: 650px;">
+
+        <!-- ===== Layar Awal ===== -->
+        <div id="start-screen">
+             <div class="card bg-secondary text-light text-center shadow-lg">
+                <div class="card-body p-5">
+                    <i class="ph ph-music-notes text-primar" style="font-size: 4rem; color: #ff46f0;"></i>
+                    <h1 class="card-title display-5 fw-bold mt-3">Kuis Seni Musik</h1>
+                    <p class="card-text text-white-50 my-4">Uji wawasan musikmu dengan kuis interaktif ini!</p>
+                    <button id="show-modal-btn" style="background-color: #641b2a;" class="text-white btn btn-lg w-100 fw-bold">
+                        Mulai Kuis
+                    </button>
+                </div>
+            </div>
+        </div>
+       
+
+        <!-- ===== Layar Kuis Utama (Tersembunyi Awalnya) ===== -->
+        <div id="quiz-screen" class="d-none">
+            <div class="card bg-secondary text-light shadow-lg">
+                <div class="card-body p-4 p-sm-5">
+                    <!-- Header Kuis: Info Pertanyaan dan Skor -->
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <div id="question-counter" class="fs-5 fw-semibold text-white-50">Pertanyaan 1/10</div>
+                        <div id="score-display" class="fs-5 fw-bold text-primary">Skor: 0</div>
+                    </div>
+
+                    <!-- Pertanyaan Utama -->
+                    <h2 id="question-text" class="h3 fw-bold mb-4 text-center">...</h2>
+                    
+                    <!-- Kontrol Audio Interaktif -->
+                    <div id="audio-player-container" class="mb-4">
+                        <div class="d-flex align-items-center gap-3 bg-dark p-3 rounded">
+                            <button id="play-pause-btn" class="btn btn-primary rounded-circle p-0 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                                <i id="play-icon" class="ph-fill ph-play fs-5"></i>
+                                <i id="pause-icon" class="ph-fill ph-pause fs-5 d-none"></i>
+                            </button>
+                            <div class="w-100">
+                                <div class="text-white-50 small mb-1">Putar klip audio</div>
+                                <div class="audio-progress">
+                                    <div id="audio-progress-bar" class="audio-progress-bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <audio id="audio-element" src=""></audio>
+                    </div>
+
+                    <!-- Pilihan Jawaban -->
+                    <div id="answer-buttons" class="row g-3">
+                        <!-- Tombol jawaban akan dibuat oleh JavaScript -->
+                    </div>
+                    
+                    <!-- Umpan Balik Jawaban -->
+                    <div id="feedback-container" class="mt-4 text-center" style="min-height: 30px;">
+                        <!-- Pesan umpan balik akan muncul di sini -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== Layar Hasil Akhir (Tersembunyi Awalnya) ===== -->
+        <div id="end-screen" class="d-none text-center">
+             <div class="card bg-secondary text-light text-center shadow-lg">
+                <div class="card-body p-5">
+                    <i class="ph ph-trophy text-warning" style="font-size: 4rem;"></i>
+                    <h1 class="card-title display-5 fw-bold mt-3">Kuis Selesai!</h1>
+                    <p class="card-text text-white-50 mt-3 mb-2">Skor akhir kamu adalah:</p>
+                    <p id="final-score" class="display-1 fw-bold text-primary">0</p>
+                    <button id="restart-btn" class="btn btn-primary btn-lg w-100 fw-bold mt-4">
+                        Coba Lagi
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- ===== Modal Instruksi (BARU) ===== -->
+    <div class="modal fade" id="instructionModal" tabindex="-1" aria-labelledby="instructionModalLabel" aria-hidden="true" data-bs-backdrop="static">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-light text-dark">
+          <div class="modal-header border-secondary">
+            <h1 class="modal-title fs-5" id="instructionModalLabel"><i class="ph ph-info-thin me-2"></i>Petunjuk Kuis</h1>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Selamat datang di Kuis Seni Musik!</p>
+            <ul>
+                <li>Dengarkan setiap klip audio dengan saksama.</li>
+                <li>Pilih jawaban yang menurut Anda paling tepat.</li>
+                <li>Anda akan mendapatkan skor untuk setiap jawaban yang benar.</li>
+            </ul>
+            <p class="mb-0">Semoga berhasil!</p>
+          </div>
+          <div class="modal-footer border-secondary">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+            <button type="button" id="start-btn" class="btn btn-primary">Saya Mengerti, Mulai!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+        <footer class="container-fluid text-white mt-5 p-5 text-wrap" style="background-color: #641B2E;">
+        <div class="d-flex flex-wrap justify-content-between row-cols-6">
+            <div class="Tentang ms-lg-5 d-flex flex-column">
+                <h4 class="fw-bold">Tentang Solo-Music</h4>
+                <p class=" text-wrap">
+                    Solo-Music adalah platform yang didedikasikan untuk seni musik, menyediakan alat dan sumber daya untuk
+                    membantu seniman dari semua tingkat keterampilan.
+                </p>
+                <br>
+            </div>
+            
+
+            <div class="Web ms-lg-5 ms-md-0 me-lg-5 d-flex flex-column">
+                <h4 class="fw-bold">Website Resmi</h4>
+                <a href="#">Solo-Music</a>
+                <a href="#">Seni Indonesia</a>
+                <a href="#">Musik Indonesia</a>
+                <a href="#">Seni Musik Indonesia</a>
+            </div>
+
+            <div class="Kontak ms-lg-5 ms-md-0 me-lg-5 d-flex flex-column">
+                <h4 class="fw-bold">Kontak</h4>
+                <p><i class="bi bi-envelope-at-fill"></i> solomusic4@gmail.com</p>
+                <p><i class="bi bi-telephone-fill"></i> Telepon: 021-12345678</p>
+                <p><i class="bi bi-geo-alt-fill"></i> Jl. Raya Basket No. 123, Banjarmasin</p>
+            </div>
+        </div>
+        <hr class="my-4" style="border-color: rgba(255,255,255,0.2);">
+        <div class="d-flex flex-column align-items-center mt-3">
+            <h4 class="fw-bold">Ikuti Kami</h4>
+            <div class="d-flex">
+                <a href="#" class="text-white me-3 fs-5"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-white me-3 fs-5"><i class="bi bi-twitter"></i></a>
+                <a href="https://www.instagram.com/alfaaarez___/" class="text-white me-3 fs-5"><i class="bi bi-instagram"></i></a>
+                <a href="https://github.com/Alfarez-dev" class="text-white fs-5"><i class="bi bi-github"></i></a>
+            </div>
+            <br>
+            <div class="d-flex">
+                <p>
+                    &copy; 2025 Solo-Music. All rights reserved. | Made with <i class="bi bi-heart-fill text-danger"></i>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Memuat Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="js/quiz.js"></script>
+</body>
+</html>
