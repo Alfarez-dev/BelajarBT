@@ -1,0 +1,407 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi Not Musik</title>
+    
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="img/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <link rel="icon" href="img/sopran.png" type="image/png">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/materinotmusik.css">
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fw-bolder sticky-top" style="background-color: #641B2E;">
+        <div class="container-fluid me-lg-5 ms-lg-5 me-md-0 ms-md-0">
+            <img src="img/sopran.png" alt="sp"
+                style="width: 50px; height: 50px; border-radius: 50%; margin-right: 10px;">
+            <a class="navbar-brand fw-bold" href="#">Solo-Music</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="materi.html">Materi</a>
+                    </li>
+                                        <li class="nav-item">
+                        <a class="nav-link" href="quiz.html">Quiz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tentangguru.html">Tentang Guru</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontak.html">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <main class="container-fluid">
+        <div class="row justify-content-center align-items-center"
+            style="min-height: 100vh; background-image: url(img/background.gif);background-size: cover; background-position: center; box-shadow: 0 8px 48px 0 rgba(0,0,0,0.18), 0 1.5px 8px 0 rgba(100,27,46,0.12);">
+            <div class="banner col-md-8 text-center text-white">
+                <br>
+                <br>
+                <img class="adventure" src="img/notmateri.png" alt="Banner">
+                <p style="font-size: 1rem; color: #fff; margin-top: 20px; font-weight: bolder;">
+                    Selamat datang di Solo-Music! Di sini, kamu akan menemukan berbagai materi musik yang menarik dan
+                    bermanfaat. Mulai dari notasi dasar hingga teori musik lanjutan, semua tersedia untuk membantu kamu
+                    memahami seni musik dengan lebih baik. Ayo eksplorasi dan tingkatkan pengetahuan musikmu!
+                </p>
+                <br>
+
+            </div>
+        </div>
+        <br>
+        <div class="container-fluid text-center align-self-center align-items-center">
+        <iframe class="ratio h-25" src="https://www.youtube.com/embed/OJxjImrY3r8?si=dL9JS6dU6eLR1GCe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <br>
+        <p class="fw-bold text-dark" style="font-size: 1.2rem; color: #fff;">
+                    "Musik adalah bahasa universal yang menghubungkan hati dan jiwa kita." - Solo-Music
+        </p>
+        </div>
+
+        <br>
+
+        <!-- Materi Not Musik Cards -->
+        <section class="container mt-4">
+            <div class="row g-4" id="materi-cards">
+            <!-- Not Balok -->
+            <div class="col-md-4" data-category="semua dasar teori">
+                <div class="card h-100 shadow">
+                <img src="img/notbalok.jpeg" class="card-img-top" style="width:100%;height:250px;object-fit:contain;background:#fff;" alt="Not Balok">
+                <div class="card-body">
+                    <h5 class="card-title">Not Balok</h5>
+                    <p class="card-text">Not balok adalah sistem penulisan notasi musik yang menggunakan lima garis dan empat spasi. Setiap posisi garis dan spasi menunjukkan nada tertentu. Not balok digunakan secara internasional dalam musik klasik dan modern.</p>
+                </div>
+                </div>
+            </div>
+            <!-- Not Angka -->
+            <div class="col-md-4" data-category="semua dasar teori">
+                <div class="card h-100 shadow">
+                <img src="img/notangka.jpeg" class="card-img-top" style="width:100%;height:250px;object-fit:contain;background:#fff;" alt="Not Angka">
+                <div class="card-body">
+                    <h5 class="card-title">Not Angka</h5>
+                    <p class="card-text">Not angka adalah sistem penulisan notasi musik menggunakan angka 1-7 untuk mewakili nada. Notasi ini banyak digunakan di Indonesia karena mudah dipelajari oleh pemula.</p>
+                </div>
+                </div>
+            </div>
+            <!-- Tanda Kunci (G, F, C) -->
+            <div class="col-md-4" data-category="semua dasar teori">
+                <div class="card h-100 shadow">
+                <img src="img/tandakunci.jpeg" class="card-img-top" style="width:100%;height:250px;object-fit:contain;background:#fff;" alt="Tanda Kunci">
+                <div class="card-body">
+                    <h5 class="card-title">Tanda Kunci (Clef)</h5>
+                    <p class="card-text">Tanda kunci seperti kunci G, F, dan C digunakan untuk menentukan posisi nada pada not balok. Kunci G biasanya untuk suara tinggi, kunci F untuk suara rendah, dan kunci C untuk suara tengah.</p>
+                </div>
+                </div>
+            </div>
+            <!-- Tanda Birama -->
+            <div class="col-md-4" data-category="semua dasar teori">
+                <div class="card h-100 shadow">
+                <img src="img/tandabirama.jpeg" class="card-img-top" style="width:100%;height:250px;object-fit:contain;background:#fff;" alt="Tanda Birama">
+                <div class="card-body">
+                    <h5 class="card-title">Tanda Birama</h5>
+                    <p class="card-text">Tanda birama menunjukkan jumlah ketukan dalam satu birama. Contoh: 4/4 berarti satu birama terdiri dari 4 ketukan. Tanda birama penting untuk menjaga ritme lagu.</p>
+                </div>
+                </div>
+            </div>
+            <!-- Tanda Kres dan Mol -->
+            <div class="col-md-4" data-category="semua lanjutan teori">
+                <div class="card h-100 shadow">
+                <img src="img/tandakres&mol.jpeg" class="card-img-top" style="width:100%;height:250px;object-fit:contain;background:#fff;" alt="Tanda Kres dan Mol">
+                <div class="card-body">
+                    <h5 class="card-title">Tanda Kres (#) dan Mol (b)</h5>
+                    <p class="card-text">Tanda kres (#) menaikkan nada setengah, sedangkan tanda mol (b) menurunkan nada setengah. Tanda ini sering digunakan untuk mengubah nada dasar lagu.</p>
+                </div>
+                </div>
+            </div>
+            <!-- Tanda Diam (Rest) -->
+            <div class="col-md-4" data-category="semua dasar teori">
+                <div class="card h-100 shadow">
+                <img src="img/tandadiam.jpg" class="card-img-top" style="width:100%;height:250px;object-fit:contain;background:#fff;" alt="Tanda Diam">
+                <div class="card-body">
+                    <h5 class="card-title">Tanda Diam (Rest)</h5>
+                    <p class="card-text">Tanda diam adalah simbol yang menunjukkan bagian musik yang harus didiamkan atau tidak dimainkan. Setiap jenis tanda diam memiliki durasi yang berbeda.</p>
+                </div>
+                </div>
+            </div>
+            <!-- Tangga Nada Mayor -->
+            <div class="col-md-4" data-category="semua lanjutan teori">
+                <div class="card h-100 shadow">
+                <img src="img/tanda mayorminor.jpg" class="card-img-top" style="width:100%;height:250px;object-fit:contain;background:#fff;" alt="Tangga Nada Mayor">
+                <div class="card-body">
+                    <h5 class="card-title">Tangga Nada Mayor</h5>
+                    <p class="card-text">Tangga nada mayor adalah urutan nada dengan pola interval tertentu yang menghasilkan nuansa ceria. Contoh: C-D-E-F-G-A-B-C.</p>
+                </div>
+                </div>
+            </div>
+            <!-- Tangga Nada Minor -->
+            <div class="col-md-4" data-category="semua lanjutan teori">
+                <div class="card h-100 shadow">
+                <img src="img/tanda mayorminor.jpg" class="card-img-top" style="width:100%;height:250px;object-fit:contain;background:#fff;" alt="Tangga Nada Minor">
+                <div class="card-body">
+                    <h5 class="card-title">Tangga Nada Minor</h5>
+                    <p class="card-text">Tangga nada minor memiliki pola interval yang berbeda dari mayor dan menghasilkan nuansa sedih atau melankolis. Contoh: A-B-C-D-E-F-G-A.</p>
+                </div>
+                </div>
+            </div>
+            <!-- Interval Nada -->
+            <div class="col-md-4" data-category="semua lanjutan teori">
+                <div class="card h-100 shadow">
+                <img src="img/interval.png" class="card-img-top" style="width:100%;height:250px;object-fit:contain;background:#fff;" alt="Interval Nada">
+                <div class="card-body">
+                    <h5 class="card-title">Interval Nada</h5>
+                    <p class="card-text">Interval adalah jarak antara dua nada. Contoh interval: prime, sekon, terts, kwart, kwint, dsb. Interval penting untuk membentuk harmoni dan melodi.</p>
+                </div>
+                </div>
+            </div>
+            <!-- Chord Dasar -->
+            <div class="col-md-4" data-category="semua lanjutan teori">
+                <div class="card h-100 shadow">
+                <img src="img/chord.png" class="card-img-top" style="width:100%;height:250px;object-fit:contain;background:#fff;" alt="Chord Dasar">
+                <div class="card-body">
+                    <h5 class="card-title">Chord Dasar</h5>
+                    <p class="card-text">Chord adalah gabungan beberapa nada yang dimainkan bersamaan. Chord dasar seperti C, G, Am, F sering digunakan dalam lagu-lagu populer.</p>
+                </div>
+                </div>
+            </div>
+            <!-- Dinamika Musik -->
+            <div class="col-md-4" data-category="semua lanjutan teori">
+                <div class="card h-100 shadow">
+                <img src="img/dinamika.gif" class="card-img-top" style="width:100%;height:250px;object-fit:contain;background:#fff;" alt="Dinamika Musik">
+                <div class="card-body">
+                    <h5 class="card-title">Dinamika Musik</h5>
+                    <p class="card-text">Dinamika adalah tanda untuk menunjukkan keras atau lembutnya suara dalam musik, seperti piano (lembut), forte (keras), crescendo (semakin keras), dan decrescendo (semakin lembut).</p>
+                </div>
+                </div>
+            </div>
+            <!-- Tempo Musik -->
+            <div class="col-md-4" data-category="semua lanjutan teori">
+                <div class="card h-100 shadow">
+                <img src="img/tempo.jpg" class="card-img-top" style="width:100%;height:250px;object-fit:contain;background:#fff;" alt="Tempo Musik">
+                <div class="card-body">
+                    <h5 class="card-title">Tempo Musik</h5>
+                    <p class="card-text">Tempo adalah kecepatan lagu dinyanyikan atau dimainkan. Contoh istilah tempo: Largo (lambat), Allegro (cepat), Moderato (sedang).</p>
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- Quiz Section -->
+        <section class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="card shadow">
+                        <div class="card-header text-white" style="background-color: #641B2E;">
+                            <h5 class="mb-0">Quiz: Tes Pengetahuan Musikmu! 🎶 (Opsional)</h5>
+                        </div>
+                        <div class="card-body">
+                            <form id="quizForm">
+                                <div class="mb-4">
+                                    <label class="fw-bold">1. Tanda minor biasanya untuk suasana apa?</label>
+                                    <div>
+                                        <input type="radio" name="q1" value="Sedih" id="q1a">
+                                        <label for="q1a">A. Sedih</label><br>
+                                        <input type="radio" name="q1" value="Ceria" id="q1b">
+                                        <label for="q1b">B. Ceria</label><br>
+                                        <input type="radio" name="q1" value="Gembira" id="q1c">
+                                        <label for="q1c">C. Gembira</label><br>
+                                        <input type="radio" name="q1" value="Marah" id="q1d">
+                                        <label for="q1d">D. Marah</label>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="fw-bold">2. Tempo musik sedang?</label>
+                                    <div>
+                                        <input type="radio" name="q2" value="Moderato" id="q2a">
+                                        <label for="q2a">A. Moderato</label><br>
+                                        <input type="radio" name="q2" value="Allegro" id="q2b">
+                                        <label for="q2b">B. Allegro</label><br>
+                                        <input type="radio" name="q2" value="Andante" id="q2c">
+                                        <label for="q2c">C. Andante</label><br>
+                                        <input type="radio" name="q2" value="Largo" id="q2d">
+                                        <label for="q2d">D. Largo</label>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="fw-bold">3. Tempo musik paling lambat?</label>
+                                    <div>
+                                        <input type="radio" name="q3" value="Largo" id="q3a">
+                                        <label for="q3a">A. Largo</label><br>
+                                        <input type="radio" name="q3" value="Adagio" id="q3b">
+                                        <label for="q3b">B. Adagio</label><br>
+                                        <input type="radio" name="q3" value="Andante" id="q3c">
+                                        <label for="q3c">C. Andante</label><br>
+                                        <input type="radio" name="q3" value="Allegro" id="q3d">
+                                        <label for="q3d">D. Allegro</label>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="fw-bold">4. Tempo musik paling cepat?</label>
+                                    <div>
+                                        <input type="radio" name="q4" value="Presto" id="q4a">
+                                        <label for="q4a">A. Presto</label><br>
+                                        <input type="radio" name="q4" value="Allegro" id="q4b">
+                                        <label for="q4b">B. Allegro</label><br>
+                                        <input type="radio" name="q4" value="Vivace" id="q4c">
+                                        <label for="q4c">C. Vivace</label><br>
+                                        <input type="radio" name="q4" value="Largo" id="q4d">
+                                        <label for="q4d">D. Largo</label>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="fw-bold">5. Notasi angka menggunakan angka berapa saja?</label>
+                                    <div>
+                                        <input type="radio" name="q5" value="1-7" id="q5a">
+                                        <label for="q5a">A. 1-7</label><br>
+                                        <input type="radio" name="q5" value="1-5" id="q5b">
+                                        <label for="q5b">B. 1-5</label><br>
+                                        <input type="radio" name="q5" value="1-8" id="q5c">
+                                        <label for="q5c">C. 1-8</label><br>
+                                        <input type="radio" name="q5" value="1-10" id="q5d">
+                                        <label for="q5d">D. 1-10</label>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="fw-bold">6. Kunci G pada not balok biasanya digunakan untuk?</label>
+                                    <div>
+                                        <input type="radio" name="q6" value="Suara tinggi" id="q6a">
+                                        <label for="q6a">A. Suara tinggi</label><br>
+                                        <input type="radio" name="q6" value="Suara rendah" id="q6b">
+                                        <label for="q6b">B. Suara rendah</label><br>
+                                        <input type="radio" name="q6" value="Suara tengah" id="q6c">
+                                        <label for="q6c">C. Suara tengah</label><br>
+                                        <input type="radio" name="q6" value="Semua suara" id="q6d">
+                                        <label for="q6d">D. Semua suara</label>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="fw-bold">7. Tanda kres (#) pada notasi musik berarti?</label>
+                                    <div>
+                                        <input type="radio" name="q7" value="Nada naik setengah" id="q7a">
+                                        <label for="q7a">A. Nada naik setengah</label><br>
+                                        <input type="radio" name="q7" value="Nada turun setengah" id="q7b">
+                                        <label for="q7b">B. Nada turun setengah</label><br>
+                                        <input type="radio" name="q7" value="Nada tetap" id="q7c">
+                                        <label for="q7c">C. Nada tetap</label><br>
+                                        <input type="radio" name="q7" value="Nada hilang" id="q7d">
+                                        <label for="q7d">D. Nada hilang</label>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="fw-bold">8. Tangga nada mayor memiliki nuansa?</label>
+                                    <div>
+                                        <input type="radio" name="q8" value="Ceria" id="q8a">
+                                        <label for="q8a">A. Ceria</label><br>
+                                        <input type="radio" name="q8" value="Sedih" id="q8b">
+                                        <label for="q8b">B. Sedih</label><br>
+                                        <input type="radio" name="q8" value="Misterius" id="q8c">
+                                        <label for="q8c">C. Misterius</label><br>
+                                        <input type="radio" name="q8" value="Menegangkan" id="q8d">
+                                        <label for="q8d">D. Menegangkan</label>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="fw-bold">9. Istilah "Allegro" dalam tempo musik berarti?</label>
+                                    <div>
+                                        <input type="radio" name="q9" value="Cepat" id="q9a">
+                                        <label for="q9a">A. Cepat</label><br>
+                                        <input type="radio" name="q9" value="Lambat" id="q9b">
+                                        <label for="q9b">B. Lambat</label><br>
+                                        <input type="radio" name="q9" value="Sedang" id="q9c">
+                                        <label for="q9c">C. Sedang</label><br>
+                                        <input type="radio" name="q9" value="Sangat lambat" id="q9d">
+                                        <label for="q9d">D. Sangat lambat</label>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="fw-bold">10. Chord dasar C terdiri dari nada?</label>
+                                    <div>
+                                        <input type="radio" name="q10" value="C-E-G" id="q10a">
+                                        <label for="q10a">A. C-E-G</label><br>
+                                        <input type="radio" name="q10" value="C-D-E" id="q10b">
+                                        <label for="q10b">B. C-D-E</label><br>
+                                        <input type="radio" name="q10" value="C-F-G" id="q10c">
+                                        <label for="q10c">C. C-F-G</label><br>
+                                        <input type="radio" name="q10" value="C-E-F" id="q10d">
+                                        <label for="q10d">D. C-E-F</label>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-success fw-bold">Kirim Jawaban</button>
+                            </form>
+                            <div id="quizResult" class="alert mt-4 d-none"></div>
+                            <div class="progress mt-3 d-none" id="quizProgressBar" style="height: 32px;">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated fw-bold" id="quizProgress" role="progressbar" style="width: 0%; background-color: #641B2E; font-size: 1.1rem;">0%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <br>
+            <!-- Footer -->
+        <footer class="container-fluid text-white mt-5 p-5 text-wrap" style="background-color: #641B2E;">
+        <div class="d-flex flex-wrap justify-content-between row-cols-md-0 row-cols-6-lg">
+            <div class="Tentang ms-lg-5 d-flex flex-column">
+                <h4 class="fw-bold">Tentang Solo-Music</h4>
+                <p class=" text-wrap">
+                    Solo-Music adalah platform yang didedikasikan untuk seni musik, menyediakan alat dan sumber daya untuk
+                    membantu seniman dari semua tingkat keterampilan.
+                </p>
+                <br>
+            </div>
+            
+
+            <div class="Web ms-lg-5 ms-md-0 me-lg-5 d-flex flex-column">
+                <h4 class="fw-bold">Website Resmi</h4>
+                <a href="#">Solo-Music</a>
+                <a href="#">Seni Indonesia</a>
+                <a href="#">Musik Indonesia</a>
+                <a href="#">Seni Musik Indonesia</a>
+            </div>
+            <br>
+            <br>
+            <div class="Kontak ms-lg-5 ms-md-0 me-lg-5 d-flex flex-column">
+                <h4 class="fw-bold">Kontak</h4>
+                <p><i class="bi bi-envelope-at-fill"></i> solomusic4@gmail.com</p>
+                <p><i class="bi bi-telephone-fill"></i> Telepon: 021-12345678</p>
+                <p><i class="bi bi-geo-alt-fill"></i> Jl. Raya Basket No. 123, Banjarmasin</p>
+            </div>
+        </div>
+        <hr class="my-4" style="border-color: rgba(255,255,255,0.2);">
+        <div class="d-flex flex-column align-items-center mt-3">
+            <h4 class="fw-bold">Ikuti Kami</h4>
+            <div class="d-flex">
+                <a href="#" class="text-white me-3 fs-5"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-white me-3 fs-5"><i class="bi bi-twitter"></i></a>
+                <a href="https://www.instagram.com/alfaaarez___/" class="text-white me-3 fs-5"><i class="bi bi-instagram"></i></a>
+                <a href="https://github.com/Alfarez-dev" class="text-white fs-5"><i class="bi bi-github"></i></a>
+            </div>
+            <br>
+            <div class="d-flex">
+                <p>
+                    &copy; 2025 Solo-Music. All rights reserved. | Made with <i class="bi bi-heart-fill text-danger"></i>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+    <script src="js/materinotmusik.js"></script>
+</html>
